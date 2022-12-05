@@ -11,6 +11,12 @@ import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.hooisthat.databinding.FragmentSecondBinding;
 
+/*
+This is the results page which shows the user all of the potential
+identifications with an accuracy percentage. The user can tap each animal
+to read more.
+*/
+
 public class SecondFragment extends Fragment {
 
     private FragmentSecondBinding binding;
