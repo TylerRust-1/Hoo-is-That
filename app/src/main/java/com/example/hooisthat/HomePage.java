@@ -9,17 +9,16 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.hooisthat.databinding.FragmentSecondBinding;
+import com.example.hooisthat.databinding.HomePageBinding;
 
 /*
-This is the results page which shows the user all of the potential
-identifications with an accuracy percentage. The user can tap each animal
-to read more.
+This is the home page. The user can tap the microphone to identify
+an animal or go to the app settings.
 */
 
-public class SecondFragment extends Fragment {
+public class HomePage extends Fragment {
 
-    private FragmentSecondBinding binding;
+    private HomePageBinding binding;
 
     @Override
     public View onCreateView(
@@ -27,7 +26,7 @@ public class SecondFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentSecondBinding.inflate(inflater, container, false);
+        binding = HomePageBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
@@ -35,11 +34,11 @@ public class SecondFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
+        binding.micButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(SecondFragment.this)
-                        .navigate(R.id.action_SecondFragment_to_FirstFragment);
+                NavHostFragment.findNavController(HomePage.this)
+                        .navigate(R.id.action_HomePage_to_Results);
             }
         });
     }
