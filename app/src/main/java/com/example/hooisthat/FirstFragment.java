@@ -11,6 +11,11 @@ import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.hooisthat.databinding.FragmentFirstBinding;
 
+/*
+This is the home page. The user can tap the microphone to identify
+an animal or go to the app settings.
+*/
+
 public class FirstFragment extends Fragment {
 
     private FragmentFirstBinding binding;
@@ -29,7 +34,7 @@ public class FirstFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonFirst.setOnClickListener(new View.OnClickListener() {
+        binding.micButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(FirstFragment.this)
