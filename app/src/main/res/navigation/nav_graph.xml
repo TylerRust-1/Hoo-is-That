@@ -12,7 +12,7 @@
         tools:layout="@layout/home_page">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            android:id="@+id/action_HomePage_to_Results"
             app:destination="@id/Results" />
     </fragment>
     <fragment

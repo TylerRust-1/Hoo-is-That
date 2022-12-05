@@ -38,7 +38,7 @@ public class HomePage extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(HomePage.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+                        .navigate(R.id.action_HomePage_to_Results);
             }
         });
     }
