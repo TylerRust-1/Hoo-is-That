@@ -20,17 +20,10 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        // Hide the status bar. (Hides the time/battery life and all)
-        /*
-        View decorView = getWindow().getDecorView();
-        int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
-        decorView.setSystemUiVisibility(uiOptions);
-        */
-
         // Hide Action bar
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().hide();
-        }
+        //if (getSupportActionBar() != null) {
+        //    getSupportActionBar().hide();
+        //}
     }
 
     /*
