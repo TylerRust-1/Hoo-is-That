@@ -2,6 +2,7 @@
 
 This is an unfinished animal noise classification Android App made for educational purposes in CISC682 at the University of Delaware.
 
+Home Page             |  Results Screen
 :-------------------------:|:-------------------------:
 ![](https://github.com/TylerRust-1/Hoo-is-That/blob/main/demo-images/Home_Screen.png "Hoo is That? - Home Screen")  |  ![Picture demo](https://github.com/TylerRust-1/Hoo-is-That/blob/main/demo-images/Results_Screen.png "Hoo is That? - Results Screen")
 
