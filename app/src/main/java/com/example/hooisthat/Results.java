@@ -5,10 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.fragment.NavHostFragment;
 
+import com.example.hooisthat.Results;
 import com.example.hooisthat.databinding.ResultsBinding;
 
 /*
@@ -30,18 +29,6 @@ public class Results extends Fragment {
         binding = ResultsBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
-    }
-
-    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(Results.this)
-                        .navigate(R.id.action_Results_to_HomePage);
-            }
-        });
     }
 
     @Override
