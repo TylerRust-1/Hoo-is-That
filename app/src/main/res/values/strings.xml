@@ -17,4 +17,12 @@
     <string name="next">Next</string>
     <string name="back">Back</string>
 
+    <string name="read_more">Read More</string>
+    <string name="howler_monkey">Howler Monkey</string>
+    <string name="snub_nose_monkey">Snub-Nosed Monkey</string>
+    <string name="howler_accuracy">95%</string>
+    <string name="snub_monkey_accuracy">10%</string>
+
+    <string name="howler_description">Image of a howler monkey</string>
+    <string name="snub_monkey_description">Image of a Snub-Nosed Monkey</string>
 </resources>
