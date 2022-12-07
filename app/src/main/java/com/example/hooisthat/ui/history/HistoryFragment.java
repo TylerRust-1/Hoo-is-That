@@ -18,14 +18,14 @@ public class HistoryFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HistoryViewModel galleryViewModel =
+        HistoryViewModel historyViewModel =
                 new ViewModelProvider(this).get(HistoryViewModel.class);
 
         binding = FragmentHistoryBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textHistory;
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        historyViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
