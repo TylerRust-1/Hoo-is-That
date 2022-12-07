@@ -23,4 +23,6 @@
     <string name="howler_accuracy">95%</string>
     <string name="snub_monkey_accuracy">10%</string>
 
+    <string name="howler_description">Image of a howler monkey</string>
+    <string name="snub_monkey_description">Image of a Snub-Nosed Monkey</string>
 </resources>

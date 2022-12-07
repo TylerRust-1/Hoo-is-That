@@ -26,6 +26,7 @@
                 android:layout_width="325dp"
                 android:layout_height="200dp"
                 android:layout_gravity="center_vertical"
+                android:contentDescription="@string/howler_description"
                 android:src="@drawable/howler" />
 
             <TextView
@@ -83,6 +84,7 @@
                     android:layout_width="325dp"
                     android:layout_height="200dp"
                     android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/snub_monkey_description"
                     android:src="@drawable/snubnose" />
 
                 <TextView
