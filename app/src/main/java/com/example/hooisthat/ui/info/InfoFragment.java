@@ -1,24 +1,16 @@
-package com.example.hooisthat;
+package com.example.hooisthat.ui.info;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.fragment.app.Fragment;
 
-import com.example.hooisthat.Results;
-import com.example.hooisthat.databinding.ResultsBinding;
+import com.example.hooisthat.databinding.FragmentInfoBinding;
 
-/*
-This is the results page which shows the user all of the potential
-identifications with an accuracy percentage. The user can tap each animal
-to read more.
-*/
+public class InfoFragment extends Fragment {
 
-public class Results extends Fragment {
-
-    private ResultsBinding binding;
+    private FragmentInfoBinding binding;
 
     @Override
     public View onCreateView(
@@ -26,9 +18,8 @@ public class Results extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = ResultsBinding.inflate(inflater, container, false);
+        binding = FragmentInfoBinding.inflate(inflater, container, false);
         return binding.getRoot();
-
     }
 
     @Override
@@ -36,5 +27,4 @@ public class Results extends Fragment {
         super.onDestroyView();
         binding = null;
     }
-
 }

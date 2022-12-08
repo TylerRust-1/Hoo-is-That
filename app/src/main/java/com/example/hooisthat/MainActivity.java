@@ -2,10 +2,8 @@ package com.example.hooisthat;
 
 import android.os.Bundle;
 import android.view.View;
-
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
-
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;

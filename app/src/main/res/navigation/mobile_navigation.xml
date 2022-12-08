@@ -13,7 +13,7 @@
 
         <action
             android:id="@+id/action_HomePage_to_Results"
-            app:destination="@id/Results" />
+            app:destination="@id/nav_results" />
 
     <fragment
         android:id="@+id/nav_settings"
@@ -34,10 +34,23 @@
         tools:layout="@layout/fragment_slideshow" />
 
     <fragment
-        android:id="@+id/Results"
-        android:name="com.example.hooisthat.Results"
+        android:id="@+id/nav_results"
+        android:name="com.example.hooisthat.ui.results.ResultsFragment"
         android:label="@string/results_label"
-        tools:layout="@layout/results">
+        tools:layout="@layout/fragment_results">
+
+        <action
+            android:id="@+id/action_Results_to_Info"
+            app:destination="@id/nav_info" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.example.hooisthat.ui.info.InfoFragment"
+        android:label="@string/info_label"
+        tools:layout="@layout/fragment_info" >
+
     </fragment>
 
 </navigation>
