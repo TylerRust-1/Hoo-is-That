@@ -210,8 +210,9 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:layout_marginVertical="10dp"
+            android:contentDescription="@string/howler_distribution_description"
             android:src="@drawable/howler_distribution"
-            android:contentDescription="@string/howler_distribution_description" />
+            tools:ignore="ImageContrastCheck" />
 
     </LinearLayout>
 
