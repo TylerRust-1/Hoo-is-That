@@ -37,23 +37,31 @@ public class HomeFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        Handler handler = new Handler();
+        Runnable runner = new Runnable() {
+            @Override
+            public void run() {
+                NavHostFragment.findNavController(HomeFragment.this)
+                        .navigate(R.id.action_HomePage_to_Results);
+            }
+        };
 
         binding.micButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // Removes previous calls to the runner
+                handler.removeCallbacks(runner);
+
                 ImageView rainbowWheel = binding.listeningRing;
                 rainbowWheel.setBackgroundResource(R.drawable.rainbow_ring);
 
                 loadingWheel = (AnimationDrawable) rainbowWheel.getBackground();
+
+                // Starts the animation
                 loadingWheel.start();
-                Handler handler = new Handler();
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        NavHostFragment.findNavController(HomeFragment.this)
-                                .navigate(R.id.action_HomePage_to_Results);
-                    }
-                }, 3000);
+
+                // Switches to the results page after a 3 second delay
+                handler.postDelayed(runner, 3000);
             }
         });
     }
