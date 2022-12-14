@@ -1,9 +1,12 @@
 package com.example.hooisthat.ui.home;
 
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -17,6 +20,7 @@ import com.example.hooisthat.databinding.FragmentHomeBinding;
 public class HomeFragment extends Fragment {
 
     private FragmentHomeBinding binding;
+    private AnimationDrawable loadingWheel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -37,8 +41,19 @@ public class HomeFragment extends Fragment {
         binding.micButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(HomeFragment.this)
-                        .navigate(R.id.action_HomePage_to_Results);
+                ImageView rainbowWheel = binding.listeningRing;
+                rainbowWheel.setBackgroundResource(R.drawable.rainbow_ring);
+
+                loadingWheel = (AnimationDrawable) rainbowWheel.getBackground();
+                loadingWheel.start();
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        NavHostFragment.findNavController(HomeFragment.this)
+                                .navigate(R.id.action_HomePage_to_Results);
+                    }
+                }, 3000);
             }
         });
     }
