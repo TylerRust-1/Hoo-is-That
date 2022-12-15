@@ -8,9 +8,8 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.hooisthat.R;
-import com.example.hooisthat.databinding.FragmentHowlerInfoBinding;
 import com.example.hooisthat.databinding.FragmentResultsBinding;
-import com.example.hooisthat.ui.home.HomeFragment;
+
 
 /*
 This is the results page which shows the user all of the potential
@@ -33,7 +32,14 @@ public class ResultsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(ResultsFragment.this)
-                        .navigate(R.id.action_Results_to_Info);
+                        .navigate(R.id.action_Results_to_Howler_Info);
+            }
+        });
+        binding.snubnoseCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(ResultsFragment.this)
+                        .navigate(R.id.action_Results_to_Snubnose_Info);
             }
         });
         return binding.getRoot();

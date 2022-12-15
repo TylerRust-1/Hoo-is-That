@@ -4,13 +4,14 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import androidx.fragment.app.Fragment;
 
-import com.example.hooisthat.databinding.FragmentHowlerInfoBinding;
+import com.example.hooisthat.databinding.FragmentSnubnosedInfoBinding;
 
-public class InfoFragment extends Fragment {
+public class SnubNoseInfoFragment extends Fragment {
 
-    private FragmentHowlerInfoBinding binding;
+    private FragmentSnubnosedInfoBinding binding;
 
     @Override
     public View onCreateView(
@@ -18,7 +19,7 @@ public class InfoFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentHowlerInfoBinding.inflate(inflater, container, false);
+        binding = FragmentSnubnosedInfoBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 

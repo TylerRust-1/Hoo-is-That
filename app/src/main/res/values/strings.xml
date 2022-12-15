@@ -24,7 +24,7 @@
     <string name="howler_accuracy">95%</string>
     <string name="snub_monkey_accuracy">10%</string>
 
-    <string name="howler_featured_fact">Howler Monkeys are famous for their loud howls, which can travel more than one mile through dense rain forest.</string>
+    <string name="howler_featured_fact">Howler monkeys are famous for their loud howls, which can travel more than one mile through dense rain forest.</string>
     <string name="class_title">Class:</string>
     <string name="howler_class">Mammalia</string>
     <string name="order_title">Order:</string>
@@ -36,8 +36,16 @@
     <string name="diet_title">Diet:</string>
     <string name="howler_diet">Top canopy leaves, fruit, buds, flowers, and nuts.</string>
 
+    <string name="snubnose_featured_fact">Snub-nosed monkeys are highly social. They form large troops in the summer of as many as 600 individuals.</string>
+    <string name="snubnose_class">Mammalia</string>
+    <string name="snubnose_order">Primates</string>
+    <string name="snubnose_family">Cercopithecidae</string>
+    <string name="snubnose_weight">14 to 85 lbs</string>
+    <string name="snubnose_diet">Pine needles and young firs, supplemented by bamboo shoots, leaves, buds and fruits.</string>
+
     <string name="play_description">Image of play icon for animal sound</string>
     <string name="howler_distribution_description">Image of howler distribution map</string>
+    <string name="snubnose_distribution_description">Image of snub-nose distribution map</string>
     <string name="howler_description">Image of a howler monkey</string>
     <string name="snub_monkey_description">Image of a Snub-Nosed Monkey</string>
 </resources>

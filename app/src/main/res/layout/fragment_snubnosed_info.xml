@@ -11,7 +11,7 @@
         android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/howlerInfoHeader"
+            android:id="@+id/snubnoseInfoHeader"
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:clickable="true"
@@ -19,12 +19,12 @@
             android:layout_gravity="center_horizontal">
 
             <ImageView
-                android:id="@+id/howlerInfoImage"
+                android:id="@+id/snubnoseInfoImage"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_gravity="center"
-                android:src="@drawable/howler"
-                android:contentDescription="@string/howler_description" />
+                android:src="@drawable/snubnose"
+                android:contentDescription="@string/snub_monkey_description" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -34,12 +34,12 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/HowlerInfoPageTitle"
+                    android:id="@+id/snubnoseInfoPageTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:fontFamily="sans-serif-black"
-                    android:text="@string/howler_monkey"
+                    android:text="@string/snub_nose_monkey"
                     android:textColor="@color/blue_700"
                     android:textSize="30sp"
                     android:textStyle="bold" />
@@ -49,7 +49,7 @@
         </androidx.cardview.widget.CardView>
 
         <ImageView
-            android:id="@+id/playHowlerSound"
+            android:id="@+id/playSnubnoseSound"
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_marginTop="5dp"
@@ -57,12 +57,12 @@
             android:src="@drawable/play" />
 
         <TextView
-            android:id="@+id/howlerFeaturedFact"
+            android:id="@+id/snubnoseFeaturedFact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:fontFamily="sans-serif-medium"
-            android:text="@string/howler_featured_fact"
+            android:text="@string/snubnose_featured_fact"
             android:textColor="@color/blue_700"
             android:textSize="22sp" />
 
@@ -90,13 +90,13 @@
                 android:text="@string/class_title" />
 
             <TextView
-                android:id="@+id/howlerClass"
+                android:id="@+id/snubnoseClass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:textSize="18sp"
                 android:textColor="@color/blue_700"
-                android:text="@string/howler_class" />
+                android:text="@string/snubnose_class" />
 
         </LinearLayout>
 
@@ -116,13 +116,13 @@
                 android:text="@string/order_title" />
 
             <TextView
-                android:id="@+id/howlerOrder"
+                android:id="@+id/snubnoseOrder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:textSize="18sp"
                 android:textColor="@color/blue_700"
-                android:text="@string/howler_order" />
+                android:text="@string/snubnose_order" />
 
         </LinearLayout>
 
@@ -142,13 +142,13 @@
                 android:text="@string/family_title" />
 
             <TextView
-                android:id="@+id/howlerfamily"
+                android:id="@+id/snubnosefamily"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:textSize="18sp"
                 android:textColor="@color/blue_700"
-                android:text="@string/howler_family" />
+                android:text="@string/snubnose_family" />
 
         </LinearLayout>
 
@@ -174,7 +174,7 @@
                 android:fontFamily="sans-serif-medium"
                 android:textSize="18sp"
                 android:textColor="@color/blue_700"
-                android:text="@string/howler_weight" />
+                android:text="@string/snubnose_weight" />
 
         </LinearLayout>
 
@@ -200,18 +200,19 @@
                 android:fontFamily="sans-serif-medium"
                 android:textSize="18sp"
                 android:textColor="@color/blue_700"
-                android:text="@string/howler_diet" />
+                android:text="@string/snubnose_diet" />
 
         </LinearLayout>
 
         <ImageView
             android:id="@+id/HowlerDistributionMap"
-            android:layout_width="match_parent"
+            android:layout_width="130dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="start"
             android:layout_marginHorizontal="20dp"
             android:layout_marginVertical="10dp"
-            android:contentDescription="@string/howler_distribution_description"
-            android:src="@drawable/howler_distribution"
+            android:contentDescription="@string/snubnose_distribution_description"
+            android:src="@drawable/snubnose_distribution"
             tools:ignore="ImageContrastCheck" />
 
     </LinearLayout>
