@@ -6,11 +6,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
 
-import com.example.hooisthat.databinding.FragmentInfoBinding;
+import com.example.hooisthat.databinding.FragmentHowlerInfoBinding;
 
 public class InfoFragment extends Fragment {
 
-    private FragmentInfoBinding binding;
+    private FragmentHowlerInfoBinding binding;
 
     @Override
     public View onCreateView(
@@ -18,7 +18,7 @@ public class InfoFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentInfoBinding.inflate(inflater, container, false);
+        binding = FragmentHowlerInfoBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 

@@ -49,7 +49,7 @@
         android:id="@+id/nav_info"
         android:name="com.example.hooisthat.ui.info.InfoFragment"
         android:label="@string/info_label"
-        tools:layout="@layout/fragment_info" >
+        tools:layout="@layout/fragment_howler_info" >
 
     </fragment>
 

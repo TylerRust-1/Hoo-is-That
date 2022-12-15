@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.hooisthat.R;
-import com.example.hooisthat.databinding.FragmentInfoBinding;
+import com.example.hooisthat.databinding.FragmentHowlerInfoBinding;
 import com.example.hooisthat.databinding.FragmentResultsBinding;
 import com.example.hooisthat.ui.home.HomeFragment;
 
