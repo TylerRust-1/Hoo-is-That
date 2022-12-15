@@ -28,28 +28,34 @@
         tools:layout="@layout/fragment_history" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.hooisthat.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-
-    <fragment
         android:id="@+id/nav_results"
         android:name="com.example.hooisthat.ui.results.ResultsFragment"
         android:label="@string/results_label"
         tools:layout="@layout/fragment_results">
 
         <action
-            android:id="@+id/action_Results_to_Info"
-            app:destination="@id/nav_info" />
+            android:id="@+id/action_Results_to_Howler_Info"
+            app:destination="@id/nav_howler_info" />
+
+        <action
+            android:id="@+id/action_Results_to_Snubnose_Info"
+            app:destination="@id/nav_snubnose_info" />
 
     </fragment>
 
     <fragment
-        android:id="@+id/nav_info"
-        android:name="com.example.hooisthat.ui.info.InfoFragment"
+        android:id="@+id/nav_howler_info"
+        android:name="com.example.hooisthat.ui.info.HowlerInfoFragment"
         android:label="@string/info_label"
         tools:layout="@layout/fragment_howler_info" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_snubnose_info"
+        android:name="com.example.hooisthat.ui.info.SnubNoseInfoFragment"
+        android:label="@string/info_label"
+        tools:layout="@layout/fragment_snubnosed_info" >
 
     </fragment>
 
