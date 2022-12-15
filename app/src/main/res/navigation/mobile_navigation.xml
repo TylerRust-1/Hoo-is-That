@@ -28,12 +28,6 @@
         tools:layout="@layout/fragment_history" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.hooisthat.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-
-    <fragment
         android:id="@+id/nav_results"
         android:name="com.example.hooisthat.ui.results.ResultsFragment"
         android:label="@string/results_label"
