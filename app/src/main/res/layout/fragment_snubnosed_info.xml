@@ -11,7 +11,7 @@
         android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/howlerInfoHeader"
+            android:id="@+id/snubnoseInfoHeader"
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:clickable="true"
@@ -34,7 +34,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/HowlerInfoPageTitle"
+                    android:id="@+id/snubnoseInfoPageTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -49,7 +49,7 @@
         </androidx.cardview.widget.CardView>
 
         <ImageView
-            android:id="@+id/playHowlerSound"
+            android:id="@+id/playSnubnoseSound"
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_marginTop="5dp"
@@ -57,7 +57,7 @@
             android:src="@drawable/play" />
 
         <TextView
-            android:id="@+id/howlerFeaturedFact"
+            android:id="@+id/snubnoseFeaturedFact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
@@ -90,7 +90,7 @@
                 android:text="@string/class_title" />
 
             <TextView
-                android:id="@+id/howlerClass"
+                android:id="@+id/snubnoseClass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
@@ -116,7 +116,7 @@
                 android:text="@string/order_title" />
 
             <TextView
-                android:id="@+id/howlerOrder"
+                android:id="@+id/snubnoseOrder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
@@ -142,7 +142,7 @@
                 android:text="@string/family_title" />
 
             <TextView
-                android:id="@+id/howlerfamily"
+                android:id="@+id/snubnosefamily"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
@@ -208,7 +208,7 @@
             android:id="@+id/HowlerDistributionMap"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
+            android:layout_gravity="start"
             android:layout_marginHorizontal="20dp"
             android:layout_marginVertical="10dp"
             android:contentDescription="@string/snubnose_distribution_description"
